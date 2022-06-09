@@ -26,6 +26,7 @@ void register_event(int moduleno, int event,fnptr cb){
 int perform_event(int eventno){
     int flag=0;
     struct event_reg *temp=head;
+    printf("Inside perform_event func()");
     while(temp)
     {
         if(CHECK_BIT(temp->event,eventno)){
