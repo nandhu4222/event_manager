@@ -52,4 +52,5 @@ void unregister_event(){
         cur = temp;
     }
     head = NULL;
+    printf("Unregistered the events!");
 }
